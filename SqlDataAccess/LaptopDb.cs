@@ -8,8 +8,8 @@ namespace SqlDataAccess
 {
     public class LaptopDb : DbContext
     {
-        public LaptopDb()
-            : base(nameOrConnectionString: "LaptopDb")
+        public LaptopDb(string connectionString)
+            : base(nameOrConnectionString: connectionString)
         {
 
         }
