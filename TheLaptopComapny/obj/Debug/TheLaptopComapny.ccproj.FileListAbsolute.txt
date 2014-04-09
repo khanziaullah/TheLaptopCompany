@@ -1,0 +1,2 @@
+C:\MVC\LaptopOnlineStore\TheLaptopComapny\bin\Debug\ServiceConfiguration.cscfg
+C:\MVC\LaptopOnlineStore\TheLaptopComapny\bin\Debug\ServiceDefinition.csdef

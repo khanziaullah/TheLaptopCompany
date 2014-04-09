@@ -1,0 +1,14 @@
+C:\MVC\LaptopOnlineStore\SqlDataAccess\bin\Release\SqlDataAccess.dll.config
+C:\MVC\LaptopOnlineStore\SqlDataAccess\bin\Release\SqlDataAccess.dll
+C:\MVC\LaptopOnlineStore\SqlDataAccess\bin\Release\SqlDataAccess.pdb
+C:\MVC\LaptopOnlineStore\SqlDataAccess\bin\Release\DomainLogic.dll
+C:\MVC\LaptopOnlineStore\SqlDataAccess\bin\Release\EntityFramework.dll
+C:\MVC\LaptopOnlineStore\SqlDataAccess\bin\Release\EntityFramework.SqlServer.dll
+C:\MVC\LaptopOnlineStore\SqlDataAccess\bin\Release\DomainLogic.pdb
+C:\MVC\LaptopOnlineStore\SqlDataAccess\bin\Release\EntityFramework.xml
+C:\MVC\LaptopOnlineStore\SqlDataAccess\bin\Release\EntityFramework.SqlServer.xml
+C:\MVC\LaptopOnlineStore\SqlDataAccess\obj\Release\SqlDataAccess.csprojResolveAssemblyReference.cache
+C:\MVC\LaptopOnlineStore\SqlDataAccess\obj\Release\SqlDataAccess.Migrations.First.resources
+C:\MVC\LaptopOnlineStore\SqlDataAccess\obj\Release\SqlDataAccess.csproj.GenerateResource.Cache
+C:\MVC\LaptopOnlineStore\SqlDataAccess\obj\Release\SqlDataAccess.dll
+C:\MVC\LaptopOnlineStore\SqlDataAccess\obj\Release\SqlDataAccess.pdb

@@ -1,0 +1,5 @@
+C:\MVC\LaptopOnlineStore\DomainLogic\bin\Release\DomainLogic.dll
+C:\MVC\LaptopOnlineStore\DomainLogic\bin\Release\DomainLogic.pdb
+C:\MVC\LaptopOnlineStore\DomainLogic\obj\Release\DomainLogic.csprojResolveAssemblyReference.cache
+C:\MVC\LaptopOnlineStore\DomainLogic\obj\Release\DomainLogic.dll
+C:\MVC\LaptopOnlineStore\DomainLogic\obj\Release\DomainLogic.pdb

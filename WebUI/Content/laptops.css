@@ -1,0 +1,109 @@
+﻿body {
+}
+
+.box {
+    width: 280px;
+    float: left;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+    .box input {
+        width: 170px;
+        margin: 4px;
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+.box-head {
+    border-radius: 4px 0px;
+}
+
+.left {
+    float: left;
+    background-color: #7ac0da;
+    color: white;
+    width: 270px;
+    height: 35px;
+    vertical-align: middle;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.categoryItem {
+    list-style: none;
+    padding: 5px;
+}
+
+    .categoryItem > div {
+        float: right;
+    }
+
+div.box-content ul {
+    font-size: 14px;
+    float: left;
+    width: 100%;
+    padding: 0px;
+}
+
+#categoryDialog {
+    background-color: gray;
+    width: 400px;
+    display: none;
+    float: right;
+}
+
+    #categoryDialog input {
+        width: 200px;
+    }
+
+.editConfiguration {
+    font-size: 11px;
+    float: right;
+    margin-top: 5px;
+}
+
+.editCategory {
+    background-color: gray;
+    width: 100%;
+    min-height: 100px;
+    min-width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.categoryInputControls {
+    float: left;
+}
+
+    .categoryInputControls input {
+        width: 200px;
+    }
+
+.activeCategory {
+    background-color: lightgray;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.box-content label {
+    font-weight: normal;
+}
+
+div.box-content {
+    padding: 5px;
+}
+
+button.editConfiguration {
+    float: right;
+}
+
+label {
+    font-weight: bold;
+}
