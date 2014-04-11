@@ -296,6 +296,7 @@
     <Content Include="Images\Inspiron-14R.png" />
     <Content Include="Images\Inspiron-17.png" />
     <Content Include="Images\Inspiron-15.png" />
+    <Content Include="Images\ZiaullahKhan.jpg" />
     <Content Include="Scripts\jquery-2.1.0.js" />
     <Content Include="Scripts\jquery-2.1.0.min.js" />
     <Content Include="Scripts\jquery-2.1.0.min.map" />
@@ -314,7 +315,9 @@
     <Content Include="Scripts\laptops.cutombindings.js" />
     <Content Include="Scripts\laptops.js" />
     <Content Include="Scripts\modernizr-2.7.2.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
