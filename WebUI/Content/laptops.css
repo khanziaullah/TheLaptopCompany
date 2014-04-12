@@ -34,6 +34,7 @@
 .categoryItem {
     list-style: none;
     padding: 5px;
+    cursor: pointer;
 }
 
     .categoryItem > div {
@@ -106,4 +107,10 @@ button.editConfiguration {
 
 label {
     font-weight: bold;
+}
+
+div#loading {
+    margin: auto;
+    width: 240px;
+    height: 320px;
 }

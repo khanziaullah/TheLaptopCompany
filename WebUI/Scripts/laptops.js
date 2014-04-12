@@ -5,6 +5,8 @@
 
 $(function () {
     $.getJSON("/api/administrator/GetLaptopCategory", function (data) {
+        $("#loading").hide();
+        $("#administratorpage").show();
         var viewModel = {
             categories: ko.observableArray(ko.toProtectedObservableItemArray(data)),
             laptops: ko.observableArray([]),

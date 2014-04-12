@@ -296,6 +296,7 @@
     <Content Include="Images\Inspiron-14R.png" />
     <Content Include="Images\Inspiron-17.png" />
     <Content Include="Images\Inspiron-15.png" />
+    <Content Include="Images\loading.gif" />
     <Content Include="Images\ZiaullahKhan.jpg" />
     <Content Include="Scripts\jquery-2.1.0.js" />
     <Content Include="Scripts\jquery-2.1.0.min.js" />

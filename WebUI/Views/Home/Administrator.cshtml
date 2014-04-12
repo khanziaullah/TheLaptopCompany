@@ -15,157 +15,162 @@
     </section>
 }
 
-<div id="laptopCategory" class="box">
-    <div class="box-head">
-        <h2 class="left">Category</h2>
-        <div class="box-content">
-            <input type="text" placeholder="Add New Category" data-bind="value: categoryToAdd, valueUpdate: 'afterkeydown', executeOnEnter: addCategory" />
-            <button data-bind="click: addCategory">+ Add</button>
-            <ul data-bind="foreach: categories">
-                <li class="categoryItem" data-bind="click: $parent.selectCategory">
-                    <span data-bind="text: Name"></span>
-                    <div>
-                        <a href="#" class="tag-edit">Edit</a>
-                        <a href="#" class="tag-delete">Delete</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
+<div id="loading">
+    <img src="~/Images/loading.gif" />
 </div>
 
-<div id="laptopDetails" class="box" data-bind="with: selectedCategory">
-    <div class="box-head">
-        <h2 class="left"><span data-bind="text: 'Laptops in ' + Name()"></span></h2>
-        <div class="box-content">
-            <input type="text" placeholder="Add New Laptop" />
-            <button>+ Add</button>
-            <ul data-bind="foreach: $parent.laptops">
-                <li class="categoryItem" data-bind="click: $root.selectLaptop">
-                    <span data-bind="text: Description"></span>
-                    <div>
-                        <a href="#" class="tag-delete">Delete</a>
-                    </div>
-                </li>
-            </ul>
+<div id="administratorpage" style="display: none">
+    <div id="laptopCategory" class="box">
+        <div class="box-head">
+            <h2 class="left">Category</h2>
+            <div class="box-content">
+                <input type="text" placeholder="Add New Category" data-bind="value: categoryToAdd, valueUpdate: 'afterkeydown', executeOnEnter: addCategory" />
+                <button data-bind="click: addCategory">+ Add</button>
+                <ul data-bind="foreach: categories">
+                    <li class="categoryItem" data-bind="click: $parent.selectCategory">
+                        <span data-bind="text: Name"></span>
+                        <div>
+                            <a href="#" class="tag-edit">Edit</a>
+                            <a href="#" class="tag-delete">Delete</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<div id="laptopConfiguration" class="box" data-bind="with: selectedLaptop">
-    <div class="box-head">
-        <h2 class="left">Configuration
+    <div id="laptopDetails" class="box" data-bind="with: selectedCategory">
+        <div class="box-head">
+            <h2 class="left"><span data-bind="text: 'Laptops in ' + Name()"></span></h2>
+            <div class="box-content">
+                <input type="text" placeholder="Add New Laptop" />
+                <button>+ Add</button>
+                <ul data-bind="foreach: $parent.laptops">
+                    <li class="categoryItem" data-bind="click: $root.selectLaptop">
+                        <span data-bind="text: Description"></span>
+                        <div>
+                            <a href="#" class="tag-delete">Delete</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="laptopConfiguration" class="box" data-bind="with: selectedLaptop">
+        <div class="box-head">
+            <h2 class="left">Configuration
             <button class="editConfiguration" data-bind="click: $parent.editConfigurationClick">Edit</button></h2>
-        <div class="box-content">
-            <div>
-                <label>
-                    Summary:
+            <div class="box-content">
+                <div>
+                    <label>
+                        Summary:
                     <span data-bind="ifnot: $parent.editConfiguration">
                         <span data-bind="text: $parent.Summary"></span>
                     </span>
-                    <span data-bind="if: $parent.editConfiguration">
-                        <textarea data-bind="value: $parent.Summary"></textarea>
-                    </span>
-                </label>
-            </div>
-            <div>
-                <label>
-                    Memory:
+                        <span data-bind="if: $parent.editConfiguration">
+                            <textarea data-bind="value: $parent.Summary"></textarea>
+                        </span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Memory:
                     <span data-bind="ifnot: $parent.editConfiguration">
                         <span data-bind="text: $parent.Memory"></span>
                     </span>
-                    <span data-bind="if: $parent.editConfiguration">
-                        <input data-bind="value: $parent.Memory" />
-                    </span>
-                </label>
-            </div>
-            <div>
-                <label>
-                    Hard Disk:
+                        <span data-bind="if: $parent.editConfiguration">
+                            <input data-bind="value: $parent.Memory" />
+                        </span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Hard Disk:
                     <span data-bind="ifnot: $parent.editConfiguration">
                         <span data-bind="text: $parent.HardDisk"></span>
                     </span>
-                    <span data-bind="if: $parent.editConfiguration">
-                        <input data-bind="value: $parent.HardDisk" />
-                    </span>
-                </label>
-            </div>
-            <div>
-                <label>
-                    Screen Size:
+                        <span data-bind="if: $parent.editConfiguration">
+                            <input data-bind="value: $parent.HardDisk" />
+                        </span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Screen Size:
                     <span data-bind="ifnot: $parent.editConfiguration">
                         <span data-bind="text: $parent.ScreenSize"></span>
                     </span>
-                    <span data-bind="if: $parent.editConfiguration">
-                        <input data-bind="value: $parent.ScreenSize" />
-                    </span>
-                </label>
-            </div>
-            <div>
-                <label>
-                    Processor:
+                        <span data-bind="if: $parent.editConfiguration">
+                            <input data-bind="value: $parent.ScreenSize" />
+                        </span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Processor:
                     <span data-bind="ifnot: $parent.editConfiguration">
                         <span data-bind="text: $parent.Processor"></span>
                     </span>
-                    <span data-bind="if: $parent.editConfiguration">
-                        <input data-bind="value: $parent.Processor" />
-                    </span>
-                </label>
-            </div>
-            <div>
-                <label>
-                    Operating System:
+                        <span data-bind="if: $parent.editConfiguration">
+                            <input data-bind="value: $parent.Processor" />
+                        </span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Operating System:
                     <span data-bind="ifnot: $parent.editConfiguration">
                         <span data-bind="text: $parent.OperatingSystem"></span>
                     </span>
-                    <span data-bind="if: $parent.editConfiguration">
-                        <input data-bind="value: $parent.OperatingSystem" />
-                    </span>
-                </label>
-            </div>
-            <div>
-                <label>
-                    Price:
+                        <span data-bind="if: $parent.editConfiguration">
+                            <input data-bind="value: $parent.OperatingSystem" />
+                        </span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Price:
                     <span data-bind="ifnot: $parent.editConfiguration">
                         <span data-bind="text: $parent.Price"></span>
                     </span>
-                    <span data-bind="if: $parent.editConfiguration">
-                        <input data-bind="value: $parent.Price" />
-                    </span>
-                </label>
-            </div>
-            <div>
-                <label>
-                    Image:
+                        <span data-bind="if: $parent.editConfiguration">
+                            <input data-bind="value: $parent.Price" />
+                        </span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Image:
                     <span data-bind="ifnot: $parent.editConfiguration">
-                        <img data-bind="attr: { src: '/images/'+ $parent.ImageUrl() }" />
+                        <img data-bind="attr: { src: '/images/' + $parent.ImageUrl() }" />
                     </span>
-                    <span data-bind="if: $parent.editConfiguration">
-                        Url
+                        <span data-bind="if: $parent.editConfiguration">Url
                         <input data-bind="value: $parent.ImageUrl" />
-                    </span>
-                </label>
-            </div>
+                        </span>
+                    </label>
+                </div>
 
-            <div data-bind="if: $parent.editConfiguration">
-                <button data-bind="click: $parent.saveEditConfiguration">Save</button>
-                <button data-bind="click: $parent.cancelEditConfiguration">Cancel</button>
+                <div data-bind="if: $parent.editConfiguration">
+                    <button data-bind="click: $parent.saveEditConfiguration">Save</button>
+                    <button data-bind="click: $parent.cancelEditConfiguration">Cancel</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div id="categoryDialog" data-bind="with: selectedCategory">
-    <div class="categoryInputControls">
-        Category:
+    <div id="categoryDialog" data-bind="with: selectedCategory">
+        <div class="categoryInputControls">
+            Category:
     <input type="text" data-bind="value: Name" />
+        </div>
     </div>
-</div>
 
-@*<div id="debug">
+    @*<div id="debug">
     <h2>debug</h2>
     <div data-bind="text: ko.toJSON($data)"></div>
 </div>*@
+</div>
 
 @section scripts
 {

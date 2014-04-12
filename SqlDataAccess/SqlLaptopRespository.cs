@@ -11,6 +11,7 @@ namespace SqlDataAccess
         LaptopDb _db;
         public SqlLaptopRespository(string connectionString)
         {
+            _db = new LaptopDb(connectionString);
         }
 
         public override IEnumerable<DomainLogic.Laptop> GetLaptops()
