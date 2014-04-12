@@ -9,7 +9,7 @@ namespace SqlDataAccess
     public class LaptopDb : DbContext
     {
         public LaptopDb(string connectionString)
-            : base(nameOrConnectionString: connectionString)
+            : base("LaptopDb")
         {
 
         }
